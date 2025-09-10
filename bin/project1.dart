@@ -6,4 +6,8 @@ void main(List<String> arguments) {
 
   /* multi line comment
   multi line comment */
+
+    //constanta dan final
+  final String nama2 = "agustina";
+  print("nama saya $nama $nama2");
 }
