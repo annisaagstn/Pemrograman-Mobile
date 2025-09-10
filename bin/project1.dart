@@ -36,4 +36,35 @@ void main(List<String> arguments) {
   String angka1 = "15";
   int angka2 = int.parse(angka1);
   int angka3 = bebas;
+
+  //list
+  List<String> hobby = ["memasak", "travelling", "jajan"];
+  hobby.add("shopping");
+  stdout.writeln("hobby saya adalah hobi $hobby");
+  Map<String, String> data = {
+    "nama": "Annisa",
+    "alamat" : "jln Senggani No 38",
+    "jenis kelamin": "perempuan",
+  };
+  data["pekerjaan"] = "Data Analyst";
+  data.addAll({"hobi": "memasak"});
+  stdout.writeln("Data : $data");
+  stdout.writeln("nama yang ada di dalam data $data['nama']");
+  stdout.writeln("nama yang ada di dalam data ${data['nama']}");
+  try {
+// Code that might throw an exception
+int result = 10 ~/ 0; // This will throw an IntegerDivisionByZeroException
+} on IntegerDivisionByZeroException {
+// Handles the specific IntegerDivisionByZeroException
+print("Cannot divide by zero!");
+} catch (e) {
+// Handles any other type of exception and provides the exception object
+print("An unexpected error occurred: $e");
+} finally {
+// Code that always executes, regardless of whether an exception occurred
+print("Execution complete.");
+}
+String? kendaraan;
+String kendaraan1 = "bajai";
+stdout.writeln("kendaraan $kendaraan");
 }
